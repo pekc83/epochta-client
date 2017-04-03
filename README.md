@@ -1,5 +1,8 @@
 # ePochta SMS API (v. 3.0) Client
 
+[![Build Status](https://travis-ci.org/pekc83/epochta-client.svg?branch=master)](https://travis-ci.org/pekc83/epochta-client)
+[![Coverage Status](https://coveralls.io/repos/github/pekc83/epochta-client/badge.svg)](https://coveralls.io/github/pekc83/epochta-client)
+
 ## Installation
     npm install epochta-client
 
