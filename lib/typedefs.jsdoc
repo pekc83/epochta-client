@@ -1,0 +1,181 @@
+/**
+ * Address book data
+ * @memberOf module:epochta-client
+ * @typedef {Object} AddressBook
+ * @property {number} id - Address book identifier
+ * @property {string} name - Address book name
+ * @property {number} phones - Number of phone numbers in address book
+ * @property {number} exceptions - Number of phone numbers in address book exceptions
+ * @property {string} creationdate - Address book creation date
+ * @property {string} description - Address book description
+ */
+
+/**
+ * Search params object
+ * @memberOf module:epochta-client
+ * @typedef {Object} AddressBookSearchFields
+ * @property {module:epochta-client.SearchField} [name]
+ * @property {module:epochta-client.SearchField} [phones]
+ * @property {module:epochta-client.SearchField} [date]
+ */
+
+/**
+ * Search params object
+ * @memberOf module:epochta-client
+ * @typedef {Object} PhoneNumberSearchFields
+ * @property {module:epochta-client.SearchField} [normalPhone]
+ * @property {module:epochta-client.SearchField} [phones]
+ * @property {module:epochta-client.SearchField} [idAddressBook]
+ * @property {module:epochta-client.SearchField} [variables]
+ * @property {module:epochta-client.SearchField} [status]
+ */
+
+/**
+ * Search field object
+ * @memberOf module:epochta-client
+ * @typedef {Object} SearchField
+ * @property {string} operation - comparison operator, one of ('like', '=', '>', '>=', '<', '<=')
+ * @property {string} value - value to compare to
+ */
+
+/**
+ * Response data for address book clone request
+ * @memberOf module:epochta-client
+ * @typedef {Object} AddressBookClonedResponse
+ * @property {number} idAddressBook - id of the created address book
+ * @property {boolean} successful - result
+ */
+
+/**
+ * Phone number data
+ * @memberOf module:epochta-client
+ * @typedef {Object} PhoneNumber
+ * @property {number} id - unique id
+ * @property {number} addressbook - id of address book
+ * @property {number} phone - phone number
+ * @property {number} normalphone - phone number according to international standard
+ * @property {string} variables - personalization variables separated with semicolon
+ * @property {string} status - phone number status
+ */
+
+/**
+ * Phone number exception
+ * @memberOf module:epochta-client
+ * @typedef {Object} PhoneException
+ * @property {number} id - unique id
+ * @property {number} phone - phone number
+ * @property {string} added - creation date
+ * @property {string} comment - description
+ */
+
+/**
+ * Currency
+ * @memberOf module:epochta-client
+ * @typedef {'USD'|'GBP'|'UAH'|'RUB'|'EUR'} Currency
+ */
+
+/**
+ * Balance
+ * @memberOf module:epochta-client
+ * @typedef {Object} Balance
+ * @property {module:epochta-client.Currency} currency - current currency
+ * @property {number} balance_currency - balance in current currency
+ */
+
+/**
+ * Sender name registration response
+ * @memberOf module:epochta-client
+ * @typedef {Object} SenderShortName
+ * @property {number} name_id - sender name id
+ * @property {0|1|2} status - 0-moderation; 1-approved; 2-rejected
+ */
+
+/**
+ * Sender name
+ * @memberOf module:epochta-client
+ * @typedef {Object} SenderName
+ * @property {number} id - sender id
+ * @property {string} name - sender name
+ * @property {string} country - registration country
+ * @property {0|1|2} status - 0-moderation; 1-approved; 2-rejected
+ */
+
+/**
+ * Campaign information
+ * @memberOf module:epochta-client
+ * @typedef {Object} CampaignInfo
+ * @property {number} sent - number of sent SMS that been sent
+ * @property {number} delivered - number of delivered SMS
+ * @property {number} not_delivered - number of not delivered SMS
+ * @property {number} price - campaign price
+ * @property {number} status
+ * @description Statuses:
+ * 0. Pending
+ * 1. Not enough money
+ * 2. In progress
+ * 3. Done
+ * 4. Incorect phone numbers
+ * 5. Done partially
+ * 6. SPAM
+ * 7. Wrong sender name
+ * 8. Paused
+ * 9. Planned
+ * 10. Moderation
+ */
+
+/**
+ * Campaign delivery statuses
+ * @memberOf module:epochta-client
+ * @typedef {Object} CampaignDeliveryStats
+ * @property {Array<number>} phone - phone numbers
+ * @property {Array<string>} sentdate - when was sent
+ * @property {Array<string>} donedate - when was done
+ * @property {Array<string>} status
+ * @description Statuses:
+ * |  Status               |   Description       |
+ * |-----------------------|---------------------|
+ * | 0                     |Pending              |
+ * | SENT                  |Sent                 |
+ * | DELIVERED             |Delivered            |
+ * | NOT_DELIVERED         |Not delivered        |
+ * | INVALID_PHONE_NUMBER  |Invalid phone number |
+ * | SPAM                  |Spam                 |
+ */
+
+/**
+ * List of campaigns
+ * @memberOf module:epochta-client
+ * @typedef {Object} CampaignList
+ * @property {Array<number>} id - campaign id
+ * @property {Array<string>} from - sender
+ * @property {Array<string>} body - message
+ * @property {Array<string>} status
+ * @description Statuses:
+ * 0. Pending
+ * 1. Not enough money
+ * 2. In progress
+ * 3. Done
+ * 4. Incorect phone numbers
+ * 5. Done partially
+ * 6. SPAM
+ * 7. Wrong sender name
+ * 8. Paused
+ * 9. Planned
+ * 10. Moderation
+ */
+
+/**
+ * Task info
+ * @memberOf module:epochta-client
+ * @typedef {Object} TaskInfo
+ * @property {number} id - campaign id
+ * @property {number} phone - phone number
+ * @property {number} country - country code
+ * @property {number} parts - number of campaign parts
+ * @property {string} sentdate - when was sent
+ * @property {string} donedate - when was done
+ * @property {number} price - campaign price
+ * @property {string} status - campaign status
+ * @property {string} variable - personalization variables
+ * @property {string} currency
+ */

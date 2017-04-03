@@ -1,0 +1,42 @@
+{
+  "name": "epochta-client",
+  "version": "0.0.1",
+  "description": "ePochta SMS API (v. 3.0) Client",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha -R spec",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
+    "docs": "jsdoc --readme README.md -c jsdoc.json"
+  },
+  "keywords": [
+    "epochta",
+    "sms",
+    "api"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "engineStrict": true,
+  "dependencies": {
+    "request": "2.81.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "coveralls": "2.12.0",
+    "docdash": "0.4.0",
+    "eslint": "3.17.1",
+    "eslint-config-google": "0.7.1",
+    "istanbul": "0.4.5",
+    "jsdoc": "3.4.3",
+    "mocha": "3.2.0",
+    "nock": "9.0.9",
+    "sinon": "2.1.0"
+  },
+  "repository" :  {
+    "type" : "git",
+    "url" : "https://github.com/pekc83/epochta-client.git"
+  },
+  "author": "Anton Starodubtsev <pekc83@gmail.com> (astar.rocks)",
+  "license": "ISC"
+}

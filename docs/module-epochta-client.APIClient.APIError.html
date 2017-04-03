@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>APIError - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-epochta-client.APIClient.html">APIClient</a></li><li><a href="module-epochta-client.APIClient.APIError.html">APIError</a></li><li><a href="module-epochta-client.APIClient.ResponseCodeError.html">ResponseCodeError</a></li></ul><h3>Modules</h3><ul><li><a href="module-epochta-client.html">epochta-client</a></li></ul><h3>Externals</h3><ul><li><a href="external-crypto.html">crypto</a></li><li><a href="module-epochta-client-external_request.html">request</a></li></ul><h3>Interfaces</h3><ul><li><a href="module-epochta-client-APIMethodsInterface.html">APIMethodsInterface</a><ul class='methods'><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.addAddressBook">addAddressBook</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.addPhoneToAddressBook">addPhoneToAddressBook</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.addPhoneToExceptions">addPhoneToExceptions</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.cancelCampaign">cancelCampaign</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.checkCampaignPrice">checkCampaignPrice</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.checkCampaignPriceGroup">checkCampaignPriceGroup</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.cloneAddressBook">cloneAddressBook</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.createCampaign">createCampaign</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.delAddressBook">delAddressBook</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.deleteCampaign">deleteCampaign</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.delPhoneFromAddressBook">delPhoneFromAddressBook</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.delPhoneFromAddressBookGroup">delPhoneFromAddressBookGroup</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.delPhoneFromExceptions">delPhoneFromExceptions</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.editExceptions">editExceptions</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.editPhone">editPhone</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getAddressBook">getAddressBook</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getCampaignDeliveryStats">getCampaignDeliveryStats</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getCampaignDeliveryStatsGroup">getCampaignDeliveryStatsGroup</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getCampaignInfo">getCampaignInfo</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getCampaignList">getCampaignList</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getException">getException</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getPhoneFromAddressBook">getPhoneFromAddressBook</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getSenderStatus">getSenderStatus</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getTaskInfo">getTaskInfo</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.getUserBalance">getUserBalance</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.registerSender">registerSender</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.searchAddressBook">searchAddressBook</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.searchPhones">searchPhones</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.searchPhonesInExceptions">searchPhonesInExceptions</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.sendSMS">sendSMS</a></li><li data-type='method'><a href="module-epochta-client-APIMethodsInterface.html#.sendSMSGroup">sendSMSGroup</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">APIError</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="module-epochta-client.html">epochta-client</a><a href="module-epochta-client.APIClient.html">.APIClient</a>.</span>
+        
+        APIError
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="APIError"><span class="type-signature"></span>new APIError<span class="signature">(errCode, errDescription)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="errors.js.html">errors.js</a>, <a href="errors.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>errCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">APIErrorCode</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>API Error code <a href="module-epochta-client.APIClient.APIError.html#.APIErrorCode"><code>List of Error codes</code></a></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errDescription</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error description</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<div class="description">
+    <p>Constructor</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>errCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">APIErrorCode</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>API Error code <a href="module-epochta-client.APIClient.APIError.html#.APIErrorCode"><code>List of Error codes</code></a></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errDescription</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error description</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li>Error</li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<h4 class="name" id=".APIErrorCode">APIErrorCode</h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="errors.js.html">errors.js</a>, <a href="errors.js.html#line44">line 44</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <table>
+<thead>
+<tr>
+<th style="text-align:left">Code</th>
+<th style="text-align:left">Method</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">201</td>
+<td style="text-align:left">addAddressBook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">202</td>
+<td style="text-align:left">delAddressBook</td>
+<td style="text-align:left">wrong address book id</td>
+</tr>
+<tr>
+<td style="text-align:left">203</td>
+<td style="text-align:left">delAddressBook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">204</td>
+<td style="text-align:left">editAddressBook</td>
+<td style="text-align:left">wrong address book id</td>
+</tr>
+<tr>
+<td style="text-align:left">205</td>
+<td style="text-align:left">editAddressBook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">206</td>
+<td style="text-align:left">getAddressBook</td>
+<td style="text-align:left">wrong address book id</td>
+</tr>
+<tr>
+<td style="text-align:left">207</td>
+<td style="text-align:left">getAllAddressbook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">208</td>
+<td style="text-align:left">getAllAddressbook</td>
+<td style="text-align:left">no address books</td>
+</tr>
+<tr>
+<td style="text-align:left">209</td>
+<td style="text-align:left">searchAddressbook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">210</td>
+<td style="text-align:left">searchAddressbook</td>
+<td style="text-align:left">no address books</td>
+</tr>
+<tr>
+<td style="text-align:left">211</td>
+<td style="text-align:left">addPhoneToAddressBook</td>
+<td style="text-align:left">phone number already exist</td>
+</tr>
+<tr>
+<td style="text-align:left">212</td>
+<td style="text-align:left">addPhoneToAddressBook</td>
+<td style="text-align:left">wrong phone number</td>
+</tr>
+<tr>
+<td style="text-align:left">213</td>
+<td style="text-align:left">addPhoneToAddressBook</td>
+<td style="text-align:left">invalid address book</td>
+</tr>
+<tr>
+<td style="text-align:left">214</td>
+<td style="text-align:left">getPhoneById</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">215</td>
+<td style="text-align:left">getPhoneById</td>
+<td style="text-align:left">phone number not found</td>
+</tr>
+<tr>
+<td style="text-align:left">216</td>
+<td style="text-align:left">getPhoneFromAddressBookByIdPhone</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">217</td>
+<td style="text-align:left">getPhoneFromAddressBookByIdPhone</td>
+<td style="text-align:left">phone number not found</td>
+</tr>
+<tr>
+<td style="text-align:left">218</td>
+<td style="text-align:left">addPhoneToAddressBook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">219</td>
+<td style="text-align:left">getPhoneByPhone</td>
+<td style="text-align:left">phone number not found</td>
+</tr>
+<tr>
+<td style="text-align:left">220</td>
+<td style="text-align:left">getPhoneByPhone</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">221</td>
+<td style="text-align:left">getPhoneFromAddressBook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">222</td>
+<td style="text-align:left">getPhoneFromAddressBook</td>
+<td style="text-align:left">phone number not found</td>
+</tr>
+<tr>
+<td style="text-align:left">223</td>
+<td style="text-align:left">getPhonesByAddressBook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">224</td>
+<td style="text-align:left">getPhonesByAddressBook</td>
+<td style="text-align:left">phone number not found</td>
+</tr>
+<tr>
+<td style="text-align:left">225</td>
+<td style="text-align:left">delPhoneById</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">226</td>
+<td style="text-align:left">delPhoneById</td>
+<td style="text-align:left">phone number not found</td>
+</tr>
+<tr>
+<td style="text-align:left">227</td>
+<td style="text-align:left">delPhonesByAddressBook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">228</td>
+<td style="text-align:left">delPhonesByAddressBook</td>
+<td style="text-align:left">phone number not found</td>
+</tr>
+<tr>
+<td style="text-align:left">229</td>
+<td style="text-align:left">editPhone</td>
+<td style="text-align:left">phone number not found</td>
+</tr>
+<tr>
+<td style="text-align:left">230</td>
+<td style="text-align:left">editPhone</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">231</td>
+<td style="text-align:left">searchPhones</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">232</td>
+<td style="text-align:left">searchPhones</td>
+<td style="text-align:left">phone numbers not found</td>
+</tr>
+<tr>
+<td style="text-align:left">233</td>
+<td style="text-align:left">addPhoneToExceptionsByPhone</td>
+<td style="text-align:left">phone number already in exceptions</td>
+</tr>
+<tr>
+<td style="text-align:left">234</td>
+<td style="text-align:left">addPhoneToExceptionsByPhone</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">235</td>
+<td style="text-align:left">AddPhoneToExceptionsByIdPhone</td>
+<td style="text-align:left">phone number already in exceptions</td>
+</tr>
+<tr>
+<td style="text-align:left">236</td>
+<td style="text-align:left">AddPhoneToExceptionsByIdPhone</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">237</td>
+<td style="text-align:left">AddPhoneToExceptionsByIdPhone</td>
+<td style="text-align:left">wrong phone number id</td>
+</tr>
+<tr>
+<td style="text-align:left">238</td>
+<td style="text-align:left">delPhoneFromExceptionsByPhone</td>
+<td style="text-align:left">exceptions not found</td>
+</tr>
+<tr>
+<td style="text-align:left">239</td>
+<td style="text-align:left">delPhoneFromExceptionsByPhone</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">240</td>
+<td style="text-align:left">delPhoneFromExceptionsByIdPhone</td>
+<td style="text-align:left">wrong phone number for exception</td>
+</tr>
+<tr>
+<td style="text-align:left">241</td>
+<td style="text-align:left">delPhoneFromExceptionsByIdPhone</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">242</td>
+<td style="text-align:left">delPhoneFromExceptionsByIdPhone</td>
+<td style="text-align:left">exceptions not found</td>
+</tr>
+<tr>
+<td style="text-align:left">243</td>
+<td style="text-align:left">delPhoneFromExceptionsByIdException</td>
+<td style="text-align:left">wrong exception id</td>
+</tr>
+<tr>
+<td style="text-align:left">244</td>
+<td style="text-align:left">delPhoneFromExceptionsByIdException</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">245</td>
+<td style="text-align:left">editException</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">246</td>
+<td style="text-align:left">getException</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">247</td>
+<td style="text-align:left">getException</td>
+<td style="text-align:left">exceptions not found</td>
+</tr>
+<tr>
+<td style="text-align:left">248</td>
+<td style="text-align:left">getExceptionByIdPhone</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">249</td>
+<td style="text-align:left">getExceptionByIdPhone</td>
+<td style="text-align:left">exceptions not found</td>
+</tr>
+<tr>
+<td style="text-align:left">250</td>
+<td style="text-align:left">getExceptionByIdPhone</td>
+<td style="text-align:left">wrong phone number id</td>
+</tr>
+<tr>
+<td style="text-align:left">251</td>
+<td style="text-align:left">getExceptionByPhone</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">252</td>
+<td style="text-align:left">getExceptionByPhone</td>
+<td style="text-align:left">exceptions not found</td>
+</tr>
+<tr>
+<td style="text-align:left">253</td>
+<td style="text-align:left">getExceptionByIdAddresbook</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">254</td>
+<td style="text-align:left">getExceptionByIdAddresbook</td>
+<td style="text-align:left">exceptions not found</td>
+</tr>
+<tr>
+<td style="text-align:left">255</td>
+<td style="text-align:left">getAllExceptions</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">256</td>
+<td style="text-align:left">getAllExceptions</td>
+<td style="text-align:left">exceptions not found</td>
+</tr>
+<tr>
+<td style="text-align:left">257</td>
+<td style="text-align:left">searchPhonesInExceptions</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">258</td>
+<td style="text-align:left">searchPhonesInExceptions</td>
+<td style="text-align:left">exceptions not found</td>
+</tr>
+<tr>
+<td style="text-align:left">259</td>
+<td style="text-align:left">registerSender</td>
+<td style="text-align:left">name already exist</td>
+</tr>
+<tr>
+<td style="text-align:left">260</td>
+<td style="text-align:left">registerSender</td>
+<td style="text-align:left">wrong name</td>
+</tr>
+<tr>
+<td style="text-align:left">261</td>
+<td style="text-align:left">registerSender</td>
+<td style="text-align:left">wrong country name</td>
+</tr>
+<tr>
+<td style="text-align:left">262</td>
+<td style="text-align:left">registerSender</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">263</td>
+<td style="text-align:left">registerSender</td>
+<td style="text-align:left">wrong status</td>
+</tr>
+<tr>
+<td style="text-align:left">264</td>
+<td style="text-align:left">getSenderStatusById</td>
+<td style="text-align:left">sender name missing</td>
+</tr>
+<tr>
+<td style="text-align:left">265</td>
+<td style="text-align:left">getSenderStatusByNameCountry</td>
+<td style="text-align:left">sender name missing</td>
+</tr>
+<tr>
+<td style="text-align:left">266</td>
+<td style="text-align:left">getSenderStatusAll</td>
+<td style="text-align:left">names not found</td>
+</tr>
+<tr>
+<td style="text-align:left">267</td>
+<td style="text-align:left">getSenderStatusAll</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">300</td>
+<td style="text-align:left">createCampaign or sendSMS</td>
+<td style="text-align:left">sender id missing</td>
+</tr>
+<tr>
+<td style="text-align:left">301</td>
+<td style="text-align:left">createCampaign or sendSMS</td>
+<td style="text-align:left">text missing</td>
+</tr>
+<tr>
+<td style="text-align:left">302</td>
+<td style="text-align:left">createCampaign</td>
+<td style="text-align:left">wrong address book</td>
+</tr>
+<tr>
+<td style="text-align:left">303</td>
+<td style="text-align:left">createCampaign or sendSMS</td>
+<td style="text-align:left">no valid recipients</td>
+</tr>
+<tr>
+<td style="text-align:left">304</td>
+<td style="text-align:left">createCampaign or sendSMS</td>
+<td style="text-align:left">not enough credits on trial account</td>
+</tr>
+<tr>
+<td style="text-align:left">305</td>
+<td style="text-align:left">createCampaign or sendSMS</td>
+<td style="text-align:left">not enough money on account</td>
+</tr>
+<tr>
+<td style="text-align:left">306</td>
+<td style="text-align:left">createCampaign or sendSMS</td>
+<td style="text-align:left">default error</td>
+</tr>
+<tr>
+<td style="text-align:left">310</td>
+<td style="text-align:left">getCampaignInfo</td>
+<td style="text-align:left">wrong campaign id</td>
+</tr>
+<tr>
+<td style="text-align:left">311</td>
+<td style="text-align:left">getCampaignInfo</td>
+<td style="text-align:left">campaign has been deleted</td>
+</tr>
+<tr>
+<td style="text-align:left">320</td>
+<td style="text-align:left">getCampaignDeliveryStats</td>
+<td style="text-align:left">wrong campaign id</td>
+</tr>
+<tr>
+<td style="text-align:left">321</td>
+<td style="text-align:left">getCampaignDeliveryStats</td>
+<td style="text-align:left">campaign has been deleted</td>
+</tr>
+<tr>
+<td style="text-align:left">322</td>
+<td style="text-align:left">getCampaignDeliveryStats</td>
+<td style="text-align:left">phone numbers not found</td>
+</tr>
+<tr>
+<td style="text-align:left">330</td>
+<td style="text-align:left">cancelCampaign</td>
+<td style="text-align:left">wrong campaign id</td>
+</tr>
+<tr>
+<td style="text-align:left">331</td>
+<td style="text-align:left">cancelCampaign</td>
+<td style="text-align:left">campaign has been deleted</td>
+</tr>
+<tr>
+<td style="text-align:left">332</td>
+<td style="text-align:left">cancelCampaign</td>
+<td style="text-align:left">campaign has been sent</td>
+</tr>
+<tr>
+<td style="text-align:left">340</td>
+<td style="text-align:left">deleteCampaign</td>
+<td style="text-align:left">wrong campaign id</td>
+</tr>
+<tr>
+<td style="text-align:left">341</td>
+<td style="text-align:left">deleteCampaign</td>
+<td style="text-align:left">campaign has been deleted</td>
+</tr>
+<tr>
+<td style="text-align:left">350</td>
+<td style="text-align:left">getCampaignList</td>
+<td style="text-align:left">no campaigns</td>
+</tr>
+<tr>
+<td style="text-align:left">360</td>
+<td style="text-align:left">getCampaignList</td>
+<td style="text-align:left">no campaigns</td>
+</tr>
+<tr>
+<td style="text-align:left">370</td>
+<td style="text-align:left">checkCampaignPrice</td>
+<td style="text-align:left">sender id missing</td>
+</tr>
+<tr>
+<td style="text-align:left">371</td>
+<td style="text-align:left">checkCampaignPrice</td>
+<td style="text-align:left">text missing</td>
+</tr>
+<tr>
+<td style="text-align:left">372</td>
+<td style="text-align:left">checkCampaignPrice</td>
+<td style="text-align:left">wrong address book</td>
+</tr>
+<tr>
+<td style="text-align:left">373</td>
+<td style="text-align:left">checkCampaignPrice</td>
+<td style="text-align:left">no valid recipients</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Sun Apr 02 2017 21:53:57 GMT+0300 (EEST) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
