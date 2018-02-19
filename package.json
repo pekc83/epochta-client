@@ -18,7 +18,7 @@
   },
   "engineStrict": true,
   "dependencies": {
-    "request": "2.81.0"
+    "request": "2.82.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
@@ -33,9 +33,9 @@
     "nock": "9.0.9",
     "sinon": "2.1.0"
   },
-  "repository" :  {
-    "type" : "git",
-    "url" : "https://github.com/pekc83/epochta-client.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pekc83/epochta-client.git"
   },
   "author": "Anton Starodubtsev <pekc83@gmail.com> (astar.rocks)",
   "license": "ISC"
